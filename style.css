@@ -48,7 +48,7 @@ body {
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 .aside-add .task-row-wrapper {
   display: flex;
@@ -59,9 +59,12 @@ body {
   padding: 0px;
 }
 
-.task, .button, .checkbox{
-  outline:none;
+.task,
+.button,
+.checkbox {
+  outline: none;
 }
+
 .button {
   background: none;
   border: 0px;
@@ -71,10 +74,13 @@ body {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
+
 .title,
 .label-for-new-task {
   color: #333;
@@ -84,17 +90,18 @@ body {
   padding: 30px 0 10px;
   margin: 0;
   text-transform: uppercase;
-  list-style:none;
+  list-style: none;
 }
-/*input[type="text"]*/
+
+
 .input-task {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
+  border: 1px solid #ddd;
+  background: #fff;
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
