@@ -28,6 +28,12 @@ body {
   margin: 0 auto 0;
 }
 
+.aside-add .title {
+  border-bottom: 0px;
+  padding: 0 0 0px;
+  margin: 0;
+  text-transform: uppercase;
+}
 
 .task {
   width: 56%;
