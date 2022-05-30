@@ -35,12 +35,16 @@ body {
   text-transform: uppercase;
 }
 
+.aside-add .new-task {
+  width: 318px;
+}
+
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.aside-add .task-row-wrapper {
   display: flex;
 }
 ul {
@@ -50,7 +54,7 @@ ul {
 li, h3 {
   list-style:none;
 }
-input,button{
+.task, .button, .checkbox{
   outline:none;
 }
 button {
@@ -96,9 +100,6 @@ input[type="text"]:focus {
 label[for='new-task'] {
   display: block;
   margin: 0 0 20px;
-}
-input#new-task {
-  width: 318px;
 }
 
 /* Task list */
