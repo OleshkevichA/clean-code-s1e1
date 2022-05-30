@@ -47,7 +47,8 @@ body {
 .aside-add .task-row-wrapper {
   display: flex;
 }
-ul {
+#completed-tasks,
+#incompleted-tasks {
   margin:0;
   padding: 0px;
 }
@@ -57,7 +58,7 @@ li, h3 {
 .task, .button, .checkbox{
   outline:none;
 }
-button {
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -66,7 +67,7 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.button:hover {
   color: #3a3A3a;
 }
 /* Heading */
@@ -80,6 +81,7 @@ button:hover {
   margin: 0;
   text-transform: uppercase;
 }
+/*input-task*/
 input[type="text"] {
   margin: 0;
   font-size: 18px;
@@ -92,6 +94,7 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
+/*input-task*/
 input[type="text"]:focus {
   color: #333;
 }
@@ -115,7 +118,7 @@ li > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.checkbox {
   margin: 0 10px;
 }
 li > label {
@@ -124,15 +127,16 @@ li > label {
   font-size: 18px;
   width: 226px;
 }
+/*input-task*/
 li > input[type="text"] {
   width: 226px
 }
-button.delete img {
+.button.delete .button-icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.button.delete .button-icon:hover {
   transform: rotateZ(0);
 }
 
@@ -147,7 +151,7 @@ ul li input[type=text] {
   display:none
 }
 
-ul li.editMode input[type=text] {
+.editMode input[type=text] {
   display:inline-block;
   width:224px
 }
